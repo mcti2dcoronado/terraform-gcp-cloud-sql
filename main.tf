@@ -12,7 +12,7 @@ resource "google_sql_database_instance" "mysql_server" {
  
   name             = "mysql-instance-${random_id.db_name_suffix.hex}"
   project	   = "montreal-project-mcit"
-  region           = "northamerica-northeast1-a"
+  region           = "northamerica-northeast1"
   database_version = "MYSQL_8_0"
 
   settings {
